@@ -1,0 +1,65 @@
+// Styling for the overall layout
+.sidenav-container {
+    height: 100vh; // Full viewport height
+    display: flex;
+    flex-direction: column;
+}
+  
+mat-sidenav {
+    width: 250px; // Sidebar width
+}
+  
+mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #3f51b5; // Background color to ensure visibility
+}
+  
+.content {
+    padding: 20px; // Padding for the main content area
+}
+  
+.active {
+    font-weight: bold;
+    color: #3f51b5; // Color for active menu items
+}
+  
+mat-nav-list {
+    .mat-list-item {
+        font-size: 16px;
+    }
+    
+    .mat-nav-list {
+        padding-left: 20px; // Indent nested items
+        background: #f9f9f9; // Light background for nested items
+    }
+}
+
+.class-icon {
+    width: 50px;
+    height: 30px;
+}
+
+.spec-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.no-background {
+    color: white;
+    background: none;         // Removes the button background
+    box-shadow: none;         // Removes the shadow
+    border: none;             // Removes any border
+  
+    &:hover, &:focus {
+      background: none;       // Ensures no background on hover or focus
+      box-shadow: none;       // Removes shadow on hover/focus
+      cursor: pointer;
+    }
+  
+    mat-icon {
+      color: inherit;         // Ensures the icon color follows the theme (optional)
+    }
+  }
+  
