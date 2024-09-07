@@ -4,8 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { MatToolbar, MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenav, MatSidenavContainer, MatSidenavContent, MatSidenavModule } from '@angular/material/sidenav';
 import { MatListItem, MatListModule, MatNavList } from '@angular/material/list';
-import { MatIcon, MatIconModule, MatIconRegistry } from '@angular/material/icon';
-import { DomSanitizer } from '@angular/platform-browser';
+import { MatIcon, MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-root',
@@ -31,14 +30,6 @@ import { DomSanitizer } from '@angular/platform-browser';
 export class AppComponent {
   title = 'Weave TBC simulator';
   shamanMenuOpen = true;
-
-  constructor(private iconRegistry: MatIconRegistry, private sanitizer: DomSanitizer) {
-    // Register custom icon
-    this.iconRegistry.addSvgIcon(
-      'enhancement_shaman',
-      this.sanitizer.bypassSecurityTrustResourceUrl('src\assets\classes\shaman\enhancement_shaman_icon.png')
-    );
-  }
 
   toggleShamanMenu() {
     this.shamanMenuOpen = !this.shamanMenuOpen;

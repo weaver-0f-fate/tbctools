@@ -1,0 +1,14 @@
+<mat-tab-group>
+    <!-- <mat-tab label="Character">Character</mat-tab> -->
+    <mat-tab label="Talents">
+        <app-talents-template [class]="class"></app-talents-template>
+    </mat-tab>
+    <mat-tab label="Settings">Settings</mat-tab>
+    <mat-tab label="Results">Results</mat-tab>
+    <mat-tab label="Logs">Logs</mat-tab>
+</mat-tab-group>
+
+<!-- The content will be displayed here -->
+<div class="content">
+    <router-outlet></router-outlet>
+</div>
