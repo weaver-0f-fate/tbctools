@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TalentsTemplateComponent } from './talents-template.component';
+import { TalentCellComponent } from './talent-cell.component';
 
-describe('TalentsTemplateComponent', () => {
-  let component: TalentsTemplateComponent;
-  let fixture: ComponentFixture<TalentsTemplateComponent>;
+describe('TalentCellComponent', () => {
+  let component: TalentCellComponent;
+  let fixture: ComponentFixture<TalentCellComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TalentsTemplateComponent]
+      imports: [TalentCellComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(TalentsTemplateComponent);
+    fixture = TestBed.createComponent(TalentCellComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

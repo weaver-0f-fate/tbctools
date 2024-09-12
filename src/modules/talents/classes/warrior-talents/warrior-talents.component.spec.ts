@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ClassLayoutComponent } from './class-layout.component';
+import { WarriorTalentsComponent } from './warrior-talents.component';
 
-describe('ClassLayoutComponent', () => {
-  let component: ClassLayoutComponent;
-  let fixture: ComponentFixture<ClassLayoutComponent>;
+describe('WarriorTalentsComponent', () => {
+  let component: WarriorTalentsComponent;
+  let fixture: ComponentFixture<WarriorTalentsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ClassLayoutComponent]
+      imports: [WarriorTalentsComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(ClassLayoutComponent);
+    fixture = TestBed.createComponent(WarriorTalentsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
