@@ -1,0 +1,19 @@
+.talent-container {
+    cursor: pointer;
+}
+
+.talent-image {
+    width: 36px;
+    height: 36px;
+}
+
+.talent-points {
+    background-color: #000;
+    color: rgba(64, 191, 64, 0.8);
+    padding: 0 3px;
+    position: absolute;
+    bottom: 3px;
+    right: 15px;
+    border: #333;
+    border-radius: 3px
+}
