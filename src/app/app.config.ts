@@ -20,6 +20,5 @@ export const appConfig: ApplicationConfig = {
     MatListModule,
     MatIconModule,
     provideStore(),
-    { provide: APP_BASE_HREF, useValue: '/tbctools' }
 ]
 };

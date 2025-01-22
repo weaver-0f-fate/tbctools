@@ -3,8 +3,8 @@ import { EnhancementComponent } from '../modules/classes/shaman/enhancement/enha
 import { ElementalComponent } from '../modules/classes/shaman/elemental/elemental.component';
 
 export const routes: Routes = [
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: 'enhancement', component: EnhancementComponent },
-    { path: 'elemental', component: ElementalComponent },
+    { path: 'tbctools', redirectTo: '/home', pathMatch: 'full' },
+    { path: 'tbctools/enhancement', component: EnhancementComponent },
+    { path: 'tbctools/elemental', component: ElementalComponent },
     { path: '**', redirectTo: '/home' }
 ];
