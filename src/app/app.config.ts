@@ -10,7 +10,7 @@ import { provideStore } from '@ngrx/store';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideRouter(routes, withHashLocation()),
+    provideRouter(routes),
     provideAnimationsAsync(),
     RouterModule,
     MatSidenavModule,
