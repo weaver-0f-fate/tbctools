@@ -28,7 +28,7 @@ import { MatIcon, MatIconModule } from '@angular/material/icon';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Weave TBC simulator';
+  title = 'TBC Tools';
   shamanMenuOpen = true;
 
   toggleShamanMenu() {

@@ -8,6 +8,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { provideStore } from '@ngrx/store';
+import { APP_BASE_HREF } from '@angular/common';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -18,6 +19,7 @@ export const appConfig: ApplicationConfig = {
     MatToolbarModule,
     MatListModule,
     MatIconModule,
-    provideStore()
+    provideStore(),
+    { provide: APP_BASE_HREF, useValue: '/tbctools' }
 ]
 };
