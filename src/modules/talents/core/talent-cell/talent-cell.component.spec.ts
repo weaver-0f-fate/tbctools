@@ -14,6 +14,7 @@ describe('TalentCellComponent', () => {
     
     fixture = TestBed.createComponent(TalentCellComponent);
     component = fixture.componentInstance;
+    
     fixture.detectChanges();
   });
 

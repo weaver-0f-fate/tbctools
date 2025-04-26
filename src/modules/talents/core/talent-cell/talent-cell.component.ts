@@ -25,8 +25,8 @@ export class TalentCellComponent {
   ngOnInit() {
     const talent = Talents.find(t => t.title === this.talentTitle);
 
-    this.imageUrl = talent!.iconUrl;
-    this.talentUrl = talent!.ranks[0].spellUrl;
-    this.maxPoints = talent!.ranks.length;
+    this.imageUrl = ''; // talent!.iconUrl ?? 
+    this.talentUrl = ''; // talent!.ranks[0].spellUrl
+    this.maxPoints = 5; // talent!.ranks.length
   }
 }
