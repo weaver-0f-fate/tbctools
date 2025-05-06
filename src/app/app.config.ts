@@ -7,6 +7,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { provideStore } from '@ngrx/store';
+import { panelReducer } from '@store/actions/panel.reducer';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -18,5 +19,6 @@ export const appConfig: ApplicationConfig = {
     MatListModule,
     MatIconModule,
     provideStore(),
+    provideStore({ panels: panelReducer })
 ]
 };

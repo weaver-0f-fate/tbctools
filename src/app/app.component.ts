@@ -31,9 +31,4 @@ import { ProfileComponent } from '../modules/profile/profile.component';
 })
 export class AppComponent {
   title = 'Gaming Profile';
-  shamanMenuOpen = true;
-
-  toggleShamanMenu() {
-    this.shamanMenuOpen = !this.shamanMenuOpen;
-  }
 }
