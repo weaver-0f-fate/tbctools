@@ -1,10 +1,7 @@
 import { Routes } from '@angular/router';
-import { EnhancementComponent } from '../modules/classes/shaman/enhancement/enhancement.component';
-import { ElementalComponent } from '../modules/classes/shaman/elemental/elemental.component';
+import { ProfileComponent } from '../modules/profile/profile.component'; // Import the ProfileComponent
 
 export const routes: Routes = [
-    { path: 'tbctools', redirectTo: '/home', pathMatch: 'full' },
-    { path: 'tbctools/enhancement', component: EnhancementComponent },
-    { path: 'tbctools/elemental', component: ElementalComponent },
-    { path: '**', redirectTo: '/home' }
+    { path: 'home', component: ProfileComponent }, // Define a route for '/home'
+    { path: '**', redirectTo: '/home', pathMatch: 'full' } // Wildcard route redirects to '/home'
 ];

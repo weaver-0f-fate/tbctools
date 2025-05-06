@@ -5,6 +5,7 @@ import { MatToolbar, MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenav, MatSidenavContainer, MatSidenavContent, MatSidenavModule } from '@angular/material/sidenav';
 import { MatListItem, MatListModule, MatNavList } from '@angular/material/list';
 import { MatIcon, MatIconModule } from '@angular/material/icon';
+import { ProfileComponent } from '../modules/profile/profile.component';
 
 @Component({
   selector: 'app-root',
@@ -22,13 +23,14 @@ import { MatIcon, MatIconModule } from '@angular/material/icon';
     MatToolbarModule,
     MatIconModule,
     MatListModule,
-    MatListItem
+    MatListItem,
+    ProfileComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'TBC Tools';
+  title = 'Gaming Profile';
   shamanMenuOpen = true;
 
   toggleShamanMenu() {
