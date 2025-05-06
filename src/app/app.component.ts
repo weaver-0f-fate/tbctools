@@ -8,26 +8,26 @@ import { MatIcon, MatIconModule } from '@angular/material/icon';
 import { ProfileComponent } from '../modules/profile/profile.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [
-    CommonModule, 
-    RouterOutlet, 
-    MatToolbar, 
-    MatSidenavContent, 
-    MatNavList, 
-    MatSidenav, 
-    MatIcon, 
-    MatSidenavContainer,
-    MatSidenavModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatListModule,
-    MatListItem,
-    ProfileComponent
-  ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+    selector: 'app-root',
+    standalone: true,
+    imports: [
+        CommonModule,
+        // RouterOutlet,
+        // MatToolbar,
+        // MatSidenavContent,
+        // MatNavList,
+        // MatSidenav,
+        // MatIcon,
+        // MatSidenavContainer,
+        MatSidenavModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatListModule,
+        // MatListItem,
+        ProfileComponent
+    ],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'Gaming Profile';

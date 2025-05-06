@@ -4,15 +4,15 @@ import { MatInputModule } from '@angular/material/input';
 // import { QuillModule } from 'ngx-quill';
 
 @Component({
-  selector: 'app-profile-panel-draft',
-  standalone: true,
-  imports: [
-    MatButtonModule,
-    MatInputModule
-    // QuillModule.forRoot()
-  ],
-  templateUrl: './profile-panel-draft.component.html',
-  styleUrl: './profile-panel-draft.component.scss'
+    selector: 'app-profile-panel-draft',
+    standalone: true,
+    imports: [
+        MatButtonModule,
+        MatInputModule
+        // QuillModule.forRoot()
+    ],
+    templateUrl: './profile-panel-draft.component.html',
+    styleUrls: ['./profile-panel-draft.component.scss']
 })
 
 export class ProfilePanelDraftComponent {
