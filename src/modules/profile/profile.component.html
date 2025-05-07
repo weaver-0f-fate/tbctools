@@ -5,15 +5,9 @@
     <!-- Information Sections -->
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; padding: 10px; max-width: calc(250px * 5 + 45px); margin: 0 auto;">
         
-        <app-profile-panel></app-profile-panel>
-
-        <app-profile-panel></app-profile-panel>
-
-        <app-profile-panel></app-profile-panel>
-
-        <app-profile-panel></app-profile-panel>
-
-        <app-profile-panel></app-profile-panel>
+        <div *ngFor="let panel of panels$ | async" style="margin-bottom: 10px;">
+            <app-profile-panel [panel]="panel"></app-profile-panel>
+        </div>
 
         <app-profile-panel-draft></app-profile-panel-draft>
 

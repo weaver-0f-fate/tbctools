@@ -1,16 +1,12 @@
 import { Component } from '@angular/core';
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { QuillModule } from 'ngx-quill';
 import { Store } from '@ngrx/store';
-// import { addPanel } from '../../store/actions/panel.actions';
 import { AppState } from '@store/state/app.state';
-import { StoreModule } from '@ngrx/store';
-import { addPanel, panelReducer } from '@store/actions/panel.reducer';
-// import { panelReducer } from '../../store/reducers/panel.reducer';
+import { addPanel } from '@store/actions/panel.reducer';
 
 
 @Component({

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'app-profile-panel',
@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
     styleUrl: './profile-panel.component.scss'
 })
 export class ProfilePanelComponent {
+    @Input() panel!: string;
 
+    constructor() {
+        console.log(this.panel)
+    }
 }
